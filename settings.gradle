@@ -1,0 +1,8 @@
+rootProject.name = 'learn-spring-cloud'
+
+include 'demos:hello-world'
+findProject(':demos:hello-world')?.name = 'hello-world'
+
+include 'demos:config-server'
+findProject(':demos:config-server')?.name = 'config-server'
+
