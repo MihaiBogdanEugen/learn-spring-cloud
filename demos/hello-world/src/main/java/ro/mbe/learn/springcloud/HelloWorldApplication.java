@@ -14,11 +14,6 @@ public class HelloWorldApplication {
         SpringApplication.run(HelloWorldApplication.class, args);
     }
 
-    @RequestMapping(value = "/greeting", method = RequestMethod.GET)
-    public String sayHello() {
-        return "Hello from String Boot!";
-    }
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home() {
         return "Hello World";
