@@ -18,4 +18,9 @@ public class HelloWorldApplication {
     public String sayHello() {
         return "Hello from String Boot!";
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home() {
+        return "Hello World";
+    }
 }
