@@ -1,0 +1,11 @@
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:1226
+      username: bogdan
+      password: mihai
+  profiles:
+    active: default
+encrypt:
+  key: ABCDEFGHIJKLMNOPQRSTUVWXYZ

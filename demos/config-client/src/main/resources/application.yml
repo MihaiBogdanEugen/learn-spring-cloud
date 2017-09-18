@@ -1,0 +1,9 @@
+---
+server:
+  port: 1227
+spring:
+  application:
+    name: s1rates
+management:
+  security:
+    enabled: true
