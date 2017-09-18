@@ -1,5 +1,5 @@
 ext {
-    springCloudVersion = 'Edgware.M1'
+    springCloudVersion = 'Dalston.SR3'
 }
 
 dependencies {

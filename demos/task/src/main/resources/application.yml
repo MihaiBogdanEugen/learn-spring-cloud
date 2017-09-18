@@ -1,0 +1,6 @@
+---
+server:
+  port: 1228
+management:
+  security:
+    enabled: true
