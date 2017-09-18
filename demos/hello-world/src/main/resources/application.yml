@@ -1,0 +1,6 @@
+---
+server:
+  port: 1224
+management:
+  security:
+    enabled: true

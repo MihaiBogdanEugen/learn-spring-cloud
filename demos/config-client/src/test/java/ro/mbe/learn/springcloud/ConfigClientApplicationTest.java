@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ConfigServerApplicationTest {
+public class ConfigClientApplicationTest {
 
     @Autowired
     private MockMvc mvc;
@@ -29,6 +29,6 @@ public class ConfigServerApplicationTest {
                 .get("/")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Config Server")));
+                .andExpect(content().string(equalTo("Config Client")));
     }
 }

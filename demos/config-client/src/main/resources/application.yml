@@ -1,0 +1,14 @@
+---
+server:
+  port: 1227
+management:
+  security:
+    enabled: true
+spring:
+  application:
+    name: s1rates
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:1226
