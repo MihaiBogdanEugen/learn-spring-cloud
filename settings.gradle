@@ -2,7 +2,9 @@ rootProject.name = 'learn-spring-cloud'
 
 include 'demos:hello-world'
 findProject(':demos:hello-world')?.name = 'hello-world'
-
 include 'demos:config-server'
 findProject(':demos:config-server')?.name = 'config-server'
-
+include 'demos:config-server-git'
+findProject(':demos:config-server-git')?.name = 'config-server-git'
+include 'demos:config-client'
+findProject(':demos:config-client')?.name = 'config-client'

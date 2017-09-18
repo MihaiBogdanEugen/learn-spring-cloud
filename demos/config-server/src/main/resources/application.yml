@@ -1,0 +1,9 @@
+---
+server:
+  port: 1225
+management:
+  security:
+    enabled: true
+spring:
+  profiles:
+    active: native

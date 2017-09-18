@@ -1,0 +1,10 @@
+Docker
+    - fabric8 docker plugin
+    - https://spring.io/guides/gs/spring-boot-docker/
+Swagger
+    - http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+    - https://springframework.guru/spring-boot-restful-api-documentation-with-swagger-2/
+Config Server using Git
+Config Client
+REST APIs, CRUD ops
+TEST in config server?

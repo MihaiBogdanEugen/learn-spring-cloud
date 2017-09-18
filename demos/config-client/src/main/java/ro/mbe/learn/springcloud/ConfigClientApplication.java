@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class HelloWorldApplication {
+public class ConfigClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldApplication.class, args);
+        SpringApplication.run(ConfigClientApplication.class, args);
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home() {
-        return "Hello World";
+        return "Config Client";
     }
 }
