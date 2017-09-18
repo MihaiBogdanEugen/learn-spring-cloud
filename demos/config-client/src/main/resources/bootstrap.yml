@@ -3,8 +3,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:1226
-      username: bogdan
-      password: mihai
+      username: config
+      password: client
   profiles:
     active: default
 encrypt:
