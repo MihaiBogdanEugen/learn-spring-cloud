@@ -5,6 +5,8 @@ spring:
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false
         git:
           uri: https://github.com/MihaiBogdanEugen/config1
           search-paths:
@@ -23,5 +25,5 @@ security:
   basic:
     enabled: true
   user:
-    name: bogdan
-    password: mihai
+    name: config
+    password: client
