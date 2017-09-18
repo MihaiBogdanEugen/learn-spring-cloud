@@ -1,10 +1,12 @@
 package ro.mbe.learn.springcloud.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@RefreshScope
 @Controller
 public class RateController {
 
@@ -12,18 +14,24 @@ public class RateController {
     private String rate;
 
     @Value("${lanecount}")
-    private String laneCount;
+    private String lanecount;
 
     @Value("${tollstart}")
-    private String tollStart;
+    private String tollstart;
+
+    @Value("${connstring}")
+    private String connstring;
 
     @RequestMapping("/rate")
     public String getRate(Model model) {
 
-        model.addAttribute("rate", this.rate);
-        model.addAttribute("laneCount", this.laneCount);
-        model.addAttribute("tollStart", this.tollStart);
+        model.addAttribute("rateamount", this.rate);
+        model.addAttribute("lanes", this.lanecount);
+        model.addAttribute("tollstart", this.tollstart);
+        model.addAttribute("connstring", this.connstring);
 
         return "rateview";
     }
+
+
 }

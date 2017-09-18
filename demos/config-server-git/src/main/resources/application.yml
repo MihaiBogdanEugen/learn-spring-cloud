@@ -7,19 +7,21 @@ spring:
       server:
         git:
           uri: https://github.com/MihaiBogdanEugen/config1
-#          username: aaa
-#          password: bbb
           search-paths:
             - 'station*'
-#          repos:
-#            perf:
-#              pattern:
-#                - '*/perf'
-#              uri: https://github.com/MihaiBogdanEugen/config2
-##              username: aaa
-##              password: bbb
-#              search-paths:
-#                - 'station*'
+          repos:
+            perf:
+              pattern:
+                - '*/perf'
+              uri: https://github.com/MihaiBogdanEugen/config2
+              search-paths:
+                - 'station*'
 management:
   security:
     enabled: true
+security:
+  basic:
+    enabled: true
+  user:
+    name: bogdan
+    password: mihai
