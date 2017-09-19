@@ -4,3 +4,20 @@ server:
 management:
   security:
     enabled: true
+spring:
+  rabbitmq:
+    addresses: tcp://localhost:5672
+    password: cloud
+    username: spring
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: task_topic
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          task: DEBUG
+          stream: DEBUG

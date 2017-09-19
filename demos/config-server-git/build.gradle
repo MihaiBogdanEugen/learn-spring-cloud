@@ -4,7 +4,8 @@ ext {
 
 dependencies {
     compile('org.springframework.cloud:spring-cloud-config-server')
-    compile('org.springframework.cloud:spring-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    testCompile('org.springframework.security:spring-security-test')
 }
 
 dependencyManagement {

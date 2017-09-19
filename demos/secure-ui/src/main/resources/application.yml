@@ -1,0 +1,6 @@
+---
+server:
+  port: 1234
+management:
+  security:
+    enabled: true
