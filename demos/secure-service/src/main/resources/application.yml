@@ -1,6 +1,11 @@
 ---
 server:
   port: 1233
+  context-path: /services
 management:
   security:
     enabled: true
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:1231/services/user
