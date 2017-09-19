@@ -4,3 +4,17 @@ server:
 management:
   security:
     enabled: true
+spring:
+  application:
+    name: Toll Processor
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_logs
+    username: spring
+    password: cloud
+    driver-class-name: org.postgresql.Driver
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          task: DEBUG
