@@ -4,6 +4,8 @@ ext {
 
 dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-task')
+    compile('org.springframework.boot:spring-boot-starter-jdbc')
+    runtime('org.postgresql:postgresql')
 }
 
 dependencyManagement {
