@@ -1,6 +1,14 @@
 ---
 server:
   port: 1231
+  context-path: /services
 management:
   security:
     enabled: true
+security:
+  oauth2:
+    client:
+      client-id: bbb
+      client-secret: aaaa
+      authorized-grant-types: authorization_code,refresh_token,password,client_credentials
+      scope: toll_read, toll_report
