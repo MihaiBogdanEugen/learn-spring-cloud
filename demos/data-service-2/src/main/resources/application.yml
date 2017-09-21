@@ -1,0 +1,21 @@
+---
+server:
+  port: 9006
+  context-path: /fastpass
+management:
+  security:
+    enabled: true
+spring:
+  application:
+    name: VehicleDetailsService
+  zipkin:
+    base-url: http://localhost:9015
+  sleuth:
+    sampler:
+      percentage: 1.0
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: DEBUG

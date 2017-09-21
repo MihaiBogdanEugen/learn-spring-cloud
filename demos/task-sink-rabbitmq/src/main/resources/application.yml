@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1230
+  port: 9014
 management:
   security:
     enabled: true

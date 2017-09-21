@@ -1,0 +1,21 @@
+---
+server:
+  port: 9005
+  context-path: /fastpass
+management:
+  security:
+    enabled: true
+spring:
+  application:
+    name: ContactDetailsService
+  zipkin:
+    base-url: http://localhost:9015
+  sleuth:
+    sampler:
+      percentage: 1.0
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: DEBUG

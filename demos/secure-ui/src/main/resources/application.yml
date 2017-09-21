@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1234
+  port: 9011
 management:
   security:
     enabled: true
