@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1231
+  port: 9008
   context-path: /services
 management:
   security:

@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1224
+  port: 9007
 management:
   security:
     enabled: true

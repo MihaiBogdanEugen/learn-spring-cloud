@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.7.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>ro.mbe.learn.springcloud</groupId>
+    <artifactId>learn-spring-cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+	<name>learn-spring-cloud</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
+        <java.version>1.8</java.version>
+		<spring-cloud.version>Dalston.SR3</spring-cloud.version>
+        <spring-cloud-task.version>1.2.1.RELEASE</spring-cloud-task.version>
+		<spring-cloud-deployer-local.verison>1.2.2.RELEASE</spring-cloud-deployer-local.verison>
+        <postgresql.version>42.1.4</postgresql.version>
+		<zipkin.version>2.0.0</zipkin.version>
+	</properties>
+
+    <modules>
+        <module>demos/config-client</module>
+        <module>demos/config-server</module>
+		<module>demos/config-server-git</module>
+		<module>demos/customer-service</module>
+		<module>demos/data-service-1</module>
+		<module>demos/data-service-2</module>
+		<module>demos/hello-world</module>
+		<module>demos/secure-auth-server</module>
+		<module>demos/secure-cli</module>
+		<module>demos/secure-service</module>
+		<module>demos/secure-ui</module>
+		<module>demos/task</module>
+		<module>demos/task-intake-rabbitmq</module>
+		<module>demos/task-sink-rabbitmq</module>
+		<module>demos/zipkin-server</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>        
+    </dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>	
+</project>

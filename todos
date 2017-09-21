@@ -8,3 +8,4 @@ Config Server using Git
 Config Client
 REST APIs, CRUD ops
 TEST in config server?
+Make everything work using Gradle

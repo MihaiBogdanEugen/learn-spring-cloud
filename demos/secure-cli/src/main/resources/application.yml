@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1232
+  port: 9009
 management:
   security:
     enabled: true

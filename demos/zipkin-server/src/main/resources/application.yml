@@ -1,0 +1,6 @@
+---
+server:
+  port: 9015
+management:
+  security:
+    enabled: true

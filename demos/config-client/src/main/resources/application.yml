@@ -1,6 +1,6 @@
 ---
 server:
-  port: 1227
+  port: 9001
 spring:
   application:
     name: s1rates
